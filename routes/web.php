@@ -28,10 +28,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
     Route::get('/', 'IndexController@index')->name('home');
 
-    // Auth::routes();
-    // Route::get('/auth/{provider}', 'Auth\RegisterController@redirectToProvider');
-    // Route::get('/auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');
-
     Route::get('/about', 'AboutController@index')->name('about');
 
     Route::get('/gallery', 'AboutController@gallery')->name('gallery');
@@ -51,18 +47,5 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('/contact', 'ContactController@index')->name('contact');
 
     Route::post('/contact_post', 'ContactController@message')->name('contact_post');
-
-    // Route::get('/category/{category}/', 'ProductController@categories')->name('categories');
-
-    // Route::get('/category/{id}', 'ProductController@productcat');
-
-    // Route::get('/search', 'ProductController@search');
-
-    // Route::get('/product/{id}', 'ProductController@product');
-
-    // Route::get('/products/{id}', 'ProductController@product_category')->name('products_category');
-
-    // Route::get('/product/category/{id}', 'ProductController@product_category_id')->name('product.category.id');
-
 
 });
