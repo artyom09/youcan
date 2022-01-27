@@ -105,7 +105,7 @@ return [
     'gallery' => 'Gallery',
     'awards' => 'Awards',
     'popular-posts' => 'Popular posts',
-    'comments' => 'Comments',
+    'comments' => 'Comments about the center',
     'quick-contact' => 'Quick contact',
     'questions' => 'If you have any questions, just use the contact information below',
     'items' => 'Items',
