@@ -1,4 +1,12 @@
 @media only screen and (max-width: 767px) {
+    .service-image {
+        width: 100%;
+        display: block;
+    }
+    .service-text {
+        width: 100%;
+        display: block;
+    }
   .ptb-100 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -447,6 +455,14 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .service-image {
+        width: 30%;
+        display: inline-block;
+    }
+    .service-text {
+        width: 65%;
+        display: inline-block;
+    }
   .ptb-100 {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -795,6 +811,14 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .service-image {
+        width: 30%;
+        display: inline-block;
+    }
+    .service-text {
+        width: 65%;
+        display: inline-block;
+    }
   .mean-container a.meanmenu-reveal {
     padding: 5px 0 0 0;
   }
@@ -952,6 +976,14 @@
   .container {
     max-width: 1250px;
   }
+  .service-image {
+    width: 30%;
+    display: inline-block;
+}
+.service-text {
+    width: 65%;
+    display: inline-block;
+}
 }
 
 @media only screen and (min-width: 1550px) {

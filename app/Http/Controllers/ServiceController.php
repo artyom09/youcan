@@ -2,8 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\AboutAvard;
+use App\AboutExperience;
 use App\AboutHeader;
+use App\AboutService;
+use App\Brand;
 use App\ContactUs;
+use App\Currency;
+use App\Faquestion;
+use App\Group;
+use App\OneCategory;
+use App\Post;
+use App\Service;
+use App\Product;
+use App\Folower;
+use App\QuestionsImage;
+use App\Subcategory;
 use Illuminate\Http\Request;
 use App\OrderingProduct;
 use Session;
@@ -17,13 +31,35 @@ class ServiceController extends Controller
      */
     public function index()
     {
+        $about_faquestions = Faquestion::all();
+        $about_partners = AboutAvard::all();
+        $about_service1 = AboutService::where('id', 1)->firstOrFail();
+        $about_service2 = AboutService::where('id', 2)->firstOrFail();
+        $about_service3 = AboutService::where('id', 3)->firstOrFail();
+        $about_service4 = AboutService::where('id', 4)->firstOrFail();
+        $about_header = AboutHeader::where('id', 1)->firstOrFail();
+        $about_kids = QuestionsImage::where('id', 1)->firstOrFail();
         $contact_us = ContactUs::where('id', 1)->firstOrFail();
-        $about_headers = AboutHeader::where('id', 1)->firstOrFail();
-        $ordering_products_count = OrderingProduct::all()->where('session', Session::getId())->count();
+        $services = Service::all();
+        $one_categories = OneCategory::all();
+        $brands = Brand::all();
+        $blog_post = Post::orderBy('created_at', 'desc')->take(3)->get();
+
         return view('youcan.service')->with([
-            'ordering_products_count' => $ordering_products_count,
-            'about_headers' => $about_headers,
+            'about_service1' => $about_service1,
+            'about_service2' => $about_service2,
+            'about_service3' => $about_service3,
+            'about_service4' => $about_service4,
+            'about_faquestions' => $about_faquestions,
+            'about_partners' => $about_partners,
+            'about_header' => $about_header,
             'contact_us' => $contact_us,
+            'about_kids' => $about_kids,
+            'blog_post' => $blog_post,
+
+            'one_categories' => $one_categories,
+            'brands' => $brands,
+            'services' => $services,
         ]);
     }
 }

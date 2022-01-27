@@ -6543,3 +6543,9 @@ Go Top CSS
 .newsletter-area {
     background-image: url('../../assets/img/overlay_bg.png');
 }
+
+.single-blog-item .service-texts {
+    background-color: #fdeee9;
+    padding: 30px 15px 0px;
+    border-radius: 0 0 10px 10px;
+}

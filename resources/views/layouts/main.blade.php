@@ -105,7 +105,11 @@ $set_lang = UrlController::set_language();
                                     @lang('main.about-us')
                                 </a>
                             </li>
-
+                            <li class="nav-item">
+                                <a href="{{route('service')}}" class="nav-link {{ activeMenu('service') }}">
+                                    @lang('main.services')
+                                </a>
+                            </li>
                              <li class="nav-item">
                                 <a href="{{route('gallery')}}" class="nav-link {{ activeMenu('gallery') }}">
                                     @lang('main.gallery')
@@ -187,7 +191,7 @@ $set_lang = UrlController::set_language();
                                 <div class="dropdown language-switcher d-inline-block">
                                     <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span>@lang('main.language') <i class="bx bx-chevron-down"></i></span>
-                                    </button> 
+                                    </button>
 
                                     <div class="dropdown-menu">
                                         @foreach($languages as $language)
