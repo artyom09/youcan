@@ -6549,3 +6549,6 @@ Go Top CSS
     padding: 30px 15px 0px;
     border-radius: 0 0 10px 10px;
 }
+.blog-details-desc .article-image {
+    text-align: center;
+}
