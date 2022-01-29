@@ -115,7 +115,7 @@
         </div>
     </section>
 
-
+{{-- 
     <section class="teacher-area bg-ffffff pt-100">
         <div class="container-fluid">
             <div class="section-title">
@@ -164,7 +164,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Start Testimonials Area -->
     <section class="testimonials-area pt-70 ">
