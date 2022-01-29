@@ -29,7 +29,7 @@
                                 <article class="item">
                                     <a href="{{route('service.show', $blog_post->slug)}}" class="thumb">
                                         <img class="fullimage cover" role="img" src="/storage/{{$blog_post->image}}">
-                                        <h5 style="    display: inline-block;">{{$blog_post->getTranslatedAttribute('title',config('app.locale'),config('voyager.multilingual.default'))}}</h5>
+                                        <h5 style="font-size: 14px; display: inline-block;">{{$blog_post->getTranslatedAttribute('title',config('app.locale'),config('voyager.multilingual.default'))}}</h5>
                                     </a>
                                 </article>
                                 @endforeach
