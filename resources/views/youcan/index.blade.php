@@ -56,7 +56,7 @@
                         <h3>{{ $about_header->getTranslatedAttribute('title',config('app.locale'),config('voyager.multilingual.default'))}}</h3>
                         <p>{{ $about_header->getTranslatedAttribute('information',config('app.locale'),config('voyager.multilingual.default'))}}</p>
 
-                        <ul class="who-we-are-list">
+                        {{-- <ul class="who-we-are-list">
                             <li>
                                 <span>1</span>
                                 {{ $about_header->getTranslatedAttribute('info_one',config('app.locale'),config('voyager.multilingual.default'))}}
@@ -73,7 +73,7 @@
                                 <span>4</span>
                                 {{ $about_header->getTranslatedAttribute('info_four',config('app.locale'),config('voyager.multilingual.default'))}}
                             </li>
-                        </ul>
+                        </ul> --}}
                         <div class="who-we-are-btn">
                             <a href="{{$about_header->link}}" class="default-btn">@lang('main.read-more')</a>
                         </div>

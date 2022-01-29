@@ -5960,7 +5960,7 @@ Widget Sidebar CSS
   overflow: hidden;
   display: block;
   position: relative;
-  width: 80px;
+  width: 100%;
   margin-right: 15px;
   z-index: 1;
 }

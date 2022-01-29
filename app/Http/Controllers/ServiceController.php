@@ -62,4 +62,29 @@ class ServiceController extends Controller
             'services' => $services,
         ]);
     }
+
+    public function show($slug)
+    {
+        $popular_posts = Post::inRandomOrder()->take(3)->get();
+        $blog_images = QuestionsImage::all();
+        $about_kids = QuestionsImage::where('id', 1)->firstOrFail();
+        $services = Service::where('slug', $slug)->firstOrFail();
+        $contact_us = ContactUs::where('id', 1)->firstOrFail();
+        $one_categories = OneCategory::all();
+        $brands = Brand::all();
+        $blog_services = Service::orderBy('created_at', 'desc')->take(3)->get();
+        $photos = Product::orderBy('created_at', 'desc')->take(9)->get();
+        return view('youcan.single_service')->with([
+
+            'services' => $services,
+            'about_kids' => $about_kids,
+            'popular_posts' => $popular_posts,
+            'blog_images' => $blog_images,
+            'contact_us' => $contact_us,
+            'one_categories' => $one_categories,
+            'brands' => $brands,
+            'blog_services' => $blog_services,
+            'photos' => $photos,
+        ]);
+    }
 }

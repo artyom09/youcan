@@ -37,6 +37,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     // Route::get('/staff', 'AboutController@teachers')->name('staff');
 
     Route::get('/service', 'ServiceController@index')->name('service');
+    
+    Route::get('/service/{slug}', 'ServiceController@show')->name('service.show');
 
     Route::get('/blog', 'BlogController@index')->name('blog');
 
