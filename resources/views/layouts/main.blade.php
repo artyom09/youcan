@@ -116,11 +116,11 @@ $set_lang = UrlController::set_language();
                                 </a>
                             </li>
 
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{route('staff')}}" class="nav-link {{ activeMenu('staff') }}">
                                     @lang('main.staff')
                                 </a>
-                            </li>
+                            </li> --}}
 
                             <li class="nav-item">
                                 <a href="{{route('blog')}}" class="nav-link {{ activeMenu('blog') }}">

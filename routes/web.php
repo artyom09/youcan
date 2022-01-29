@@ -34,7 +34,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::post('/follow', 'AboutController@follow')->name('follow');
 
-    Route::get('/staff', 'AboutController@teachers')->name('staff');
+    // Route::get('/staff', 'AboutController@teachers')->name('staff');
 
     Route::get('/service', 'ServiceController@index')->name('service');
 

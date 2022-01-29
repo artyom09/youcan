@@ -28,7 +28,7 @@
                     <h3>{{ $about_header->getTranslatedAttribute('title',config('app.locale'),config('voyager.multilingual.default'))}}</h3>
                     <p>{{ $about_header->getTranslatedAttribute('information',config('app.locale'),config('voyager.multilingual.default'))}}</p>
 
-                    <ul class="who-we-are-list">
+                    {{-- <ul class="who-we-are-list">
                         <li>
                             <span>1</span>
                             {{ $about_header->getTranslatedAttribute('info_one',config('app.locale'),config('voyager.multilingual.default'))}}
@@ -45,7 +45,7 @@
                             <span>4</span>
                             {{ $about_header->getTranslatedAttribute('info_four',config('app.locale'),config('voyager.multilingual.default'))}}
                         </li>
-                    </ul>
+                    </ul> --}}
                     <div class="who-we-are-btn">
                         <a href="{{$about_header->link}}" class="default-btn">@lang('main.read-more')</a>
                     </div>
@@ -61,7 +61,7 @@
     </div>
 </section>
 
-<section class="fun-facts-area pt-100 pb-70">
+{{-- <section class="fun-facts-area pt-100 pb-70">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -101,7 +101,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- Start Choose Area -->
 <section class="choose-area pt-100 pb-70">
     <div class="container">
