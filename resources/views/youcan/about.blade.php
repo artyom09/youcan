@@ -26,7 +26,7 @@
                 <div class="who-we-are-content">
                     <span> @lang('main.about-us')</span>
                     <h3>{{ $about_header->getTranslatedAttribute('title',config('app.locale'),config('voyager.multilingual.default'))}}</h3>
-                    <p>{{ $about_header->getTranslatedAttribute('information',config('app.locale'),config('voyager.multilingual.default'))}}</p>
+                    <p>{!! $about_header->getTranslatedAttribute('information',config('app.locale'),config('voyager.multilingual.default'))!!}</p>
 
                     {{-- <ul class="who-we-are-list">
                         <li>
